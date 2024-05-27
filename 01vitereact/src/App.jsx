@@ -1,10 +1,15 @@
+import Example from "./example"
 
 
 function App() {
   
-
+  const username = "Madaan"
   return (
-    <h1>React development with Vite | Anmol Madaan</h1>
+    <>
+    <Example/>
+    <h1>My name is Anmol  {username}</h1>
+    <p>Anmol</p>
+    </>                              // <></> is called a fragment, we need to return only a single argument in jsx somwe can add multiple tags in fragment and return.
   )
 }
 

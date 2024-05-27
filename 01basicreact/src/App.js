@@ -1,10 +1,12 @@
-
+import Example from './example'
 
 function App() {
   return (
-    
-      <h1>React dev</h1>
-    
+
+    <>
+    <Example/>
+      
+      </>
   );
 }
 
