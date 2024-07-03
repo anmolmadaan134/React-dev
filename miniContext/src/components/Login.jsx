@@ -10,6 +10,8 @@ function Login() {
         e.preventDefault()
         setUser({username,password})
     }
+
+    const isFormValid = username && password
   return (
     
     <div>
@@ -23,7 +25,7 @@ function Login() {
         value={password}
         onChange={(e)=> setPassword(e.target.value)}
         placeholder='password'/>
-        <button onClick={handleSubmit}>Submit</button>
+        <button onClick={handleSubmit} disabled={!isFormValid}>Submit</button>
     </div>
   )
 }
